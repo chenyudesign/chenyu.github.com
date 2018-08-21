@@ -1,0 +1,163 @@
+.navbar {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background: transparent !important;
+}
+
+.navbar-brand {
+  margin-top: 25px;
+  margin-left: 10px;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-brand:hover {
+  color: rgba(0, 0, 0, 1.0);
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+#carouselExampleIndicators .carousel-item {
+  height: calc(100vh);
+  transition: transform 1000s ease, opacity 1s ease-out
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  /*width: 150px;*/
+  opacity: 1;
+}
+
+.carousel-control-prev-icon {
+  background: url("../img/nav/left.png") center center no-repeat;
+  background-size: 20px 36px;
+  width: 20px;
+  height: 36px;
+  opacity: 1;
+}
+
+.carousel-control-next-icon {
+  background: url("../img/nav/right.png") center center no-repeat;
+  background-size: 20px 36px;
+  width: 20px;
+  height: 36px;
+  opacity: 1
+}
+
+.capFooter {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-weight: 700;
+  font-size: 30px;
+  z-index: 2000;
+}
+
+.capLeft {
+  transform-origin: left top 0;
+  transform: rotate(270deg);
+  font-weight: 700;
+  font-size: 30px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  z-index: 2000;
+}
+
+.capRight {
+  transform-origin: left top 0;
+  transform: rotate(90deg);
+  font-weight: 700;
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  float: right;
+  width: 0;
+  white-space: nowrap;
+  z-index: 2000;
+}
+
+.slidePicWrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidePicWrap img,
+.slidePicWrap video {
+  flex-shrink: 0 !important;
+  min-width: 100% !important;
+  min-height: 100% !important
+}
+
+.logoWrap{
+  background: url('../img/nav/logo.png') center center no-repeat;
+  background-size: 200px 43px;
+  display: inline-block;
+  width: 200px;
+  height: 43px;
+}
+.emailLink{
+  text-decoration: underline;
+  color: #232323;
+}
+
+.whiteStyle {
+  color: white !important
+}
+
+.whiteStyle .navbar-brand {
+  color: white !important
+}
+
+.whiteStyle .capFooter {
+  color: white !important
+}
+.whiteStyle .emailLink {
+  color: white !important
+}
+
+
+.whiteStyle
+.logoWrap{
+  background: url('../img/nav/logoW.png') center center no-repeat;
+  background-size: 158px 34px;
+  display: inline-block;
+  width: 158px;
+  height: 34px;
+}
+
+.carousel-control-prev-icon {
+  position: absolute;
+  left: 30px;
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  right: 30px;
+}
+
+.whiteStyle .carousel-control-prev-icon {
+  background: url("../img/nav/left_white.png") center center no-repeat;
+  background-size: 20px 36px;
+}
+
+.whiteStyle .carousel-control-next-icon {
+  background: url("../img/nav/right_white.png") center center no-repeat;
+  background-size: 20px 36px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  z-index: 1000;
+}
